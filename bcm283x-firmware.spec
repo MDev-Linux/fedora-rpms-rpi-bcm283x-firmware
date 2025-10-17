@@ -5,8 +5,8 @@
 #no stripping required either
 %global __os_install_post %{nil}
 
-%global snap_date       20250319
-%global commit_long     80f23d4be56a481938b0239d565f46c94b1f2dd4
+%global snap_date       20251006
+%global commit_long     4110ba807ae84b343da239fc30db49ea426f9c5d
 %global commit_short    %(c=%{commit_long}; echo ${c:0:7})
 %global fetch_url       https://raw.githubusercontent.com/raspberrypi/firmware
 
@@ -65,6 +65,9 @@ install -p * %{buildroot}/boot
 
 
 %changelog
+* Fri Oct 17 2025 Damian Wrobel <dwrobel@ertelnet.rybnik.pl> - 20251006-1.4110ba8
+- Sync to latest git commit: 4110ba807ae84b343da239fc30db49ea426f9c5d
+
 * Thu Mar 20 2025 Damian Wrobel <dwrobel@ertelnet.rybnik.pl> - 20250319-1.80f23d4
 - Sync to latest git commit: 80f23d4be56a481938b0239d565f46c94b1f2dd4
 
